@@ -1,0 +1,61 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        threeDPrinter Strayasys = new threeDPrinter();
+        Strayasys.setModel("Fortus400mc");
+        System.out.println(" Model is " +Strayasys.getModel());
+
+
+    }
+}
+
+
+
+-----------------------------------------------------
+
+package com.company;
+
+public class threeDPrinter {
+
+    private String model;
+    private String amProcess;
+    private String materialType;
+    private String size;
+
+    public void setModel(String model){
+
+        if(model.equals("Fortus400mc") || model.equals("Fortus900mc")){
+            this.model = model;
+
+            this.amProcess= "FDM";
+            this.materialType = "Polymer";
+            this.size = "400x400x450";
+            System.out.println(" Am process is "+this.amProcess+ " Material type is "+this.materialType +" Machine size is "+this.size);
+
+
+        }else{
+            this.model = "Unknown";
+        }
+
+
+
+    }
+    public String getModel(){
+        return this.model;
+    }
+
+
+
+
+}
+
+
+OUTPUT
+
+Am process is FDM Material type is Polymer Machine size is 400x400x450
+Model is Fortus400mc
+
+
+
