@@ -1,0 +1,22 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	byte myByteChallenge = 10;
+	short myShortChallenge = 20;
+	int myIntChallenge = 50;
+	long myLongChallenge = 50000L +10L*(myByteChallenge+myShortChallenge+myIntChallenge);
+        System.out.println(myLongChallenge);
+
+    short shortChallenge2 = (short) (1000 +10*(myByteChallenge+myShortChallenge+myIntChallenge));
+		System.out.println(shortChallenge2);
+	var x = 22f/7d;
+	var y = 22.00/7.00;
+		System.out.println(x);
+		System.out.println(y);
+	double wtinKg = 200d;
+	double wtinPounds = wtinKg*0.45359237d;
+		System.out.println(wtinPounds);
+    }
+}
