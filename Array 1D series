@@ -1,0 +1,47 @@
+package com.company;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int i[] = new int[10];
+		int j[] = new int[15];
+		int a = 0;
+		int b = 1;
+		int c;
+		int d;
+		int k;
+		int m[]= new int[13];
+
+		System.out.println("The Ebo series is ");
+	for(k=1;k<10;k++) {
+
+		i[k] = b + a;
+		b = i[k];
+		a = i[k - 1];
+
+		System.out.println(i[k]);
+	}
+		System.out.println("The number is prime number ");
+		for (c = 2; c < 15; c++) {
+
+			j[c] = c;
+			for (d =2; d < j[c]; d++) {
+				if (c%d == 0) {
+					break;
+				}}
+
+				if (d == j[c]) {
+
+					System.out.println(d);
+				}
+
+			}
+
+		}
+	}
+
+
+
+
+
+
